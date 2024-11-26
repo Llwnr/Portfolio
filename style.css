@@ -1,0 +1,204 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0028;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Allow stacking of sections */
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.container-bg{
+    width: 100%;
+    height: 90vh;
+    margin: 0px auto;
+    padding: 20px;
+    background-image: url("cosmos.jpg");
+    filter: blur(45px);
+    position: absolute;
+    opacity: 0.1;
+}
+.container {
+    max-width: 1200px;
+    min-height: 90vh;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    flex: 1;
+    text-align: justify;
+}
+
+.content h1{
+    font-size: 110px;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.1;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.image-container {
+    flex: 1;
+    position: relative;
+    padding-left: 50px;
+}
+
+.laptop-image {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+/* New styles for the "My Work" section */
+.my-work {
+    width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    color: black;
+}
+
+.my-work h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.my-work p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 360px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    margin-bottom: -10px;
+}
+
+.project-card p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.project-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.project-icons img {
+    width: 24px;
+    height: 24px;
+}
+.footer{
+    background-color: black;
+    color: white;
+    height: 10vh;
+    margin: 20px 0px;
+    text-align: center;
+}
+a{
+    color: white;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .container-bg{
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content horizontally */
+        text-align: center; /* Center text */
+        padding: 0;
+        left: 0;
+        margin: 0;
+    }
+    .container {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content horizontally */
+        text-align: center; /* Center text */
+        padding: 0px;
+        left: 0;
+        margin: 0;
+    }
+
+    .content {
+        padding: 0; /* Remove right padding */
+        margin-bottom: 30px; /* Add space below content */
+        width: 90%;
+    }
+    .content h1{
+        font-size: 4rem;
+    }
+
+    .image-container {
+        padding: 0; /* Remove left padding */
+        margin: 0;
+        width: 90%;
+    }
+
+    .laptop-image {
+        max-width: 80%; /* Make image smaller on mobile */
+        margin: auto;
+    }
+
+    .my-work{
+        padding: 0;
+        width: 90%;
+        margin: 0;
+    }
+
+    .projects-grid {
+        flex-direction: column; /* Stack project cards vertically */
+        gap: 20px; /* Reduce gap between cards */
+    }
+
+    .project-card {
+        width: 70%; /* Make cards take up most of the screen width */
+        max-width: 400px; /* Set a maximum width for larger screens */
+        margin: 0 auto; /* Center cards horizontally */
+    }
+}
