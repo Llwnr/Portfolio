@@ -146,7 +146,9 @@ p {
 a{
     color: white;
 }
-
+a h3{
+    color: black;
+}
 @media (max-width: 768px) { /* Adjust breakpoint as needed */
     .container-bg{
         flex-direction: column; /* Stack content vertically */
