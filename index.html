@@ -3,20 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asesh Maharjan - Portfolio</title>
+    <title>Asesh Maharjan | Data Science & Game Dev</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="logo">AM</a>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+        <button class="close-menu">×</button>
+        <a href="#" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
     <header class="hero-section">
         <div class="hero-background-overlay"></div>
         <div class="container hero-content-container">
             <div class="hero-text">
-                <h1>Hello, I'm Asesh Maharjan.</h1>
-                <p class="subtitle">A passionate BCA student exploring the realms of Data Science, Machine Learning, Software & Game Development. Welcome to my digital playground.</p>
-                 <a href="#my-work" class="cta-button">View My Projects</a>
+                <h1>Hello, I'm <span>Asesh Maharjan</span>.</h1>
+                <p class="subtitle">A passionate BCA student exploring the realms of Data Science, Machine Learning, Software & Game Development.</p>
+                <div class="tech-stack">
+                    <span class="tech-badge">C#</span>
+                    <span class="tech-badge">Asp .Net</span>
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">Machine Learning</span>
+                    <span class="tech-badge">Data Visualization</span>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#projects" class="cta-button">View My Projects</a>
+                    <a href="#contact" class="cta-button secondary">Get In Touch</a>
+                </div>
             </div>
             <div class="hero-image-container">
                 <img src="computer.webp" alt="Laptop with abstract code" class="hero-image">
@@ -25,34 +61,91 @@
     </header>
 
     <main>
-        <section id="my-work" class="projects-section">
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container about-container">
+                <div class="about-image">
+                    <img src="/api/placeholder/500/600" alt="Asesh Maharjan">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="about-text">
+                        I'm a Bachelor of Computer Applications (BCA) student with a passion for solving complex problems through code. My journey in technology has led me to explore various domains including data science, machine learning, and game development.
+                    </p>
+                    <p class="about-text">
+                        I enjoy building applications that make data more accessible and meaningful. Whether it's visualizing complex meteorological data or creating engaging game experiences, I'm driven by the challenge of turning ideas into reality through technology.
+                    </p>
+                    <p class="about-text">
+                        Currently, I'm focusing on expanding my expertise in AI/ML while continuing to develop practical applications that showcase the power of data-driven solutions.
+                    </p>
+                    <h3 style="margin-top: 20px; font-size: 1.3rem;">Technical Skills</h3>
+                    <div class="skills-container">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">PyTorch</span>
+                        <span class="skill-item">Unity/C#</span>
+                        <span class="skill-item">Data Analysis</span>
+                        <span class="skill-item">Machine Learning</span>
+                        <span class="skill-item">GIS</span>
+                        <span class="skill-item">Streamlit</span>
+                        <span class="skill-item">Data Visualization</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">Game Development</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
             <div class="container">
-                <h2>My Projects</h2>
-                <p class="section-subtitle">Here's a selection of projects I've poured my efforts into.</p>
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Explore some of my recent work across different domains</p>
+                </div>
                 <div class="projects-grid">
+                    <!-- Weather Data Visualization Project -->
                     <div class="project-card">
                         <div class="project-image-wrapper">
                             <img src="weather_viz.png" alt="Weather Data Visualization Project" class="project-image">
+                            <span class="project-category">GIS & Data</span>
                         </div>
                         <div class="project-card-content">
-                            <a href="https://github.com/Llwnr/WeatherDataVisualization" target="_blank"><h3>Weather Data Visualization</h3></a>
-                            <p>Visualizing meteorological data using GFS, GDAL, GeoServer, and PostGIS for processing and display.</p>
+                            <a href="https://github.com/Llwnr/WeatherDataVisualization" target="_blank">
+                                <h3>Weather Data Visualization</h3>
+                            </a>
+                            <p>An advanced meteorological data visualization system that uses GFS data with spatial processing via GDAL, GeoServer, and PostGIS for interactive geographic weather displays.</p>
+                            <div class="project-tech">
+                                <span class="project-tech-item">Python</span>
+                                <span class="project-tech-item">GIS</span>
+                                <span class="project-tech-item">PostGIS</span>
+                                <span class="project-tech-item">GeoServer</span>
+                                <span class="project-tech-item">GDAL</span>
+                            </div>
                             <div class="project-links">
                                 <a href="https://github.com/Llwnr/WeatherDataVisualization" target="_blank" class="project-icon-link" aria-label="Weather Data Visualization GitHub">
                                     <img src="github-mark.svg" alt="GitHub Icon">
                                 </a>
-                                <!-- <a href="#" target="_blank" class="project-live-link">View Demo (if available)</a> -->
                             </div>
                         </div>
                     </div>
 
+                    <!-- Pewpew Game -->
                     <div class="project-card">
                         <div class="project-image-wrapper">
                             <img src="pewpew.png" alt="Pewpew Game Screenshot" class="project-image">
+                            <span class="project-category">Game Dev</span>
                         </div>
                         <div class="project-card-content">
-                            <a href="https://llwnr.itch.io/pewpew" target="_blank"><h3>Pewpew</h3></a>
-                            <p>An action roguelike game inspired by X Invader, with 8+ enemy types, a final boss, and 20+ upgrades. Developed solo in Unity/C#.</p>
+                            <a href="https://llwnr.itch.io/pewpew" target="_blank">
+                                <h3>Pewpew</h3>
+                            </a>
+                            <p>A thrilling action roguelike game inspired by X Invader, featuring 8+ diverse enemy types, a challenging final boss, and 20+ unique upgrades. Developed solo in Unity/C#.</p>
+                            <div class="project-tech">
+                                <span class="project-tech-item">Unity</span>
+                                <span class="project-tech-item">C#</span>
+                                <span class="project-tech-item">Game Design</span>
+                                <span class="project-tech-item">2D Graphics</span>
+                            </div>
                             <div class="project-links">
                                 <a href="https://github.com/Llwnr/WelpHereWeGoOnceAgain.git" target="_blank" class="project-icon-link" aria-label="Pewpew GitHub">
                                     <img src="github-mark.svg" alt="GitHub Icon">
@@ -62,13 +155,23 @@
                         </div>
                     </div>
 
+                    <!-- Fruit & Veg Recognition -->
                     <div class="project-card">
                         <div class="project-image-wrapper">
                             <img src="fruitvegwallpaper.png" alt="Fruit & Veg Recognition App" class="project-image">
+                            <span class="project-category">ML & AI</span>
                         </div>
                         <div class="project-card-content">
-                            <a href="https://fruitvegrecognition-llwnr.streamlit.app/" target="_blank"><h3>Fruit & Veg Recognition</h3></a>
-                            <p>A PyTorch-based CNN model to classify fruit and vegetable images. Deployed with Streamlit for interactive use.</p>
+                            <a href="https://fruitvegrecognition-llwnr.streamlit.app/" target="_blank">
+                                <h3>Fruit & Veg Recognition</h3>
+                            </a>
+                            <p>A computer vision application powered by PyTorch that accurately classifies fruits and vegetables from images. Features a user-friendly interface built with Streamlit for real-time predictions.</p>
+                            <div class="project-tech">
+                                <span class="project-tech-item">Python</span>
+                                <span class="project-tech-item">PyTorch</span>
+                                <span class="project-tech-item">CNN</span>
+                                <span class="project-tech-item">Streamlit</span>
+                            </div>
                             <div class="project-links">
                                 <a href="https://www.kaggle.com/code/lunarnight/fruits-vegetable-classification?scriptVersionId=209725381" target="_blank" class="project-icon-link" aria-label="Fruit & Veg Recognition Kaggle">
                                     <img src="189_Kaggle_logo_logos-512.webp" alt="Kaggle Icon">
@@ -78,13 +181,23 @@
                         </div>
                     </div>
 
+                    <!-- Job Email Generator -->
                     <div class="project-card">
                         <div class="project-image-wrapper">
                             <img src="job.png" alt="Job Email Generator App" class="project-image">
+                            <span class="project-category">NLP & Web</span>
                         </div>
                         <div class="project-card-content">
-                             <a href="https://jobemailgen.streamlit.app/" target="_blank"><h3>Job Email Generation</h3></a>
-                            <p>Automates crafting application emails from job posting URLs, streamlining the job application process. Built with Streamlit.</p>
+                            <a href="https://jobemailgen.streamlit.app/" target="_blank">
+                                <h3>Job Email Generation</h3>
+                            </a>
+                            <p>An automated system that generates tailored job application emails by extracting and analyzing information from job posting URLs, streamlining the application process for job seekers.</p>
+                            <div class="project-tech">
+                                <span class="project-tech-item">Python</span>
+                                <span class="project-tech-item">NLP</span>
+                                <span class="project-tech-item">Streamlit</span>
+                                <span class="project-tech-item">Web Scraping</span>
+                            </div>
                             <div class="project-links">
                                 <a href="https://github.com/Llwnr/JobEmailGen.git" target="_blank" class="project-icon-link" aria-label="Job Email Generation GitHub">
                                     <img src="github-mark.svg" alt="GitHub Icon">
@@ -94,21 +207,197 @@
                         </div>
                     </div>
                 </div>
+                <div class="more-projects-container">
+                    <a href="https://github.com/Llwnr" target="_blank" class="cta-button">View More on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills/Services Section -->
+        <section id="skills" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">What I Do</h2>
+                    <p class="section-subtitle">My areas of expertise and interest</p>
+                </div>
+                <div class="services-grid">
+                    <!-- Data Science & Machine Learning -->
+                    <div class="service-card">
+                        <div class="service-icon">📊</div>
+                        <h3>Software Development</h3>
+                        <p>Building intelligent backend systems that handle data efficiently. Developing pipelines to automate processing.</p>
+                    </div>
+
+                    <!-- Game Development -->
+                    <div class="service-card">
+                        <div class="service-icon">🎮</div>
+                        <h3>Game Development</h3>
+                        <p>Creating engaging gaming experiences using Unity and C#. Skilled in game mechanics, character controllers, procedural generation, and optimizing for performance.</p>
+                    </div>
+
+                    <!-- Data Visualization -->
+                    <div class="service-card">
+                        <div class="service-icon">📈</div>
+                        <h3>Data Visualization</h3>
+                        <p>Transforming complex data into intuitive visual representations. Expertise in GIS technologies, spatial data analysis, and building interactive dashboards for better decision-making.</p>
+                    </div>
+
+                    <!-- Web Applications -->
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Web Applications</h3>
+                        <p>Developing functional web applications with Streamlit that make AI and data science accessible. Focused on user-friendly interfaces and deploying machine learning models to the web.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Have a project in mind or want to collaborate? Let's connect!</p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:aseshwork2002@gmail.com">aseshwork2002@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🌐</div>
+                            <div class="contact-text">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/Llwnr" target="_blank">github.com/Llwnr</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🎮</div>
+                            <div class="contact-text">
+                                <h4>Game Portfolio</h4>
+                                <a href="https://llwnr.itch.io/" target="_blank">llwnr.itch.io</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-text">
+                                <h4>Social</h4>
+                                <div class="social-links">
+                                    <a href="https://github.com/Llwnr" target="_blank" class="social-link">GH</a>
+                                    <a href="#" target="_blank" class="social-link">LI</a>
+                                    <a href="#" target="_blank" class="social-link">KG</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <p>© <span id="currentYear"></span> Asesh Maharjan. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="https://github.com/Llwnr" target="_blank">GitHub</a>
-                <a href="mailto:aseshwork2002@gmail.com">E-mail: aseshwork2002@gmail.com</a>
+            <div class="footer-content">
+                <a href="#" class="footer-logo">Asesh Maharjan</a>
+                <div class="footer-links">
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> Asesh Maharjan. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top">↑</a>
+
+    <!-- JavaScript -->
     <script>
+        // Update current year
         document.getElementById("currentYear").textContent = new Date().getFullYear();
+        
+        // Mobile Navigation Menu
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const closeMenuBtn = document.querySelector('.close-menu');
+        const mobileNav = document.querySelector('.mobile-nav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileNav.classList.add('active');
+        });
+        
+        closeMenuBtn.addEventListener('click', () => {
+            mobileNav.classList.remove('active');
+        });
+        
+        // Mobile Nav Links - Close menu when clicked
+        document.querySelectorAll('.mobile-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+            });
+        });
+        
+        // Sticky Navbar
+        const navbar = document.querySelector('.navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Back to top button
+        const backToTopBtn = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+        
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Here you would typically add code to send the form data
+            alert('Thank you for your message! I will get back to you soon.');
+            contactForm.reset();
+        });
     </script>
 </body>
 </html>
