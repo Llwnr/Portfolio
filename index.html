@@ -6,58 +6,109 @@
     <title>Asesh Maharjan - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container-bg">.</div>
-    <div class="container">
-        <div class="content">
-            <h1>Welcome.</h1>
-            <p>Hi! I'm Asesh Maharjan, currently studying Bachelors in Computer Application. I've worked on a diverse set of projects ranging from data science, machine learning to game development.</p>
+    <header class="hero-section">
+        <div class="hero-background-overlay"></div>
+        <div class="container hero-content-container">
+            <div class="hero-text">
+                <h1>Hello, I'm Asesh Maharjan.</h1>
+                <p class="subtitle">A passionate BCA student exploring the realms of Data Science, Machine Learning, and Game Development. Welcome to my digital playground.</p>
+                 <a href="#my-work" class="cta-button">View My Projects</a>
+            </div>
+            <div class="hero-image-container">
+                <img src="computer.webp" alt="Laptop with abstract code" class="hero-image">
+            </div>
         </div>
-        <div class="image-container">
-            <img src="computer.webp" alt="Laptop with code" class="laptop-image">
-        </div>
-    </div>
+    </header>
 
-    <section class="my-work">
-        <h2>My Projects</h2>
-        <p>A collection of projects I've worked on.</p>
-        <div class="projects-grid">
-            <div class="project-card">
-                <a href="https://llwnr.itch.io/pewpew" target="_blank"><img src="pewpew.png" alt="Pewpew"></a>
-                <a href="https://llwnr.itch.io/pewpew" target="_blank"><h3>Pewpew</h3></a>
-                <p>This is an action roguelike game inspired by X Invader, featuring over 8 enemy types, a final boss, and more than 20 upgrade options. Developed solo using Unity and C# with free assets for UI and music.</p>
-            
-                <div class="project-icons">
-                    <a href="https://github.com/Llwnr/WelpHereWeGoOnceAgain.git"><img src="github-mark.svg" alt="Github Icon"></a>
-                </div>
-            </div>
-            <div class="project-card">
-                <a href="https://fruitvegrecognition-llwnr.streamlit.app/" target="_blank"><img src="fruitvegwallpaper.png" alt="Fruit&Veg Recognition"></a>
-                <a href="https://fruitvegrecognition-llwnr.streamlit.app/" target="_blank"><h3>Fruit & Veg Recognition</h3></a>
-                <p>This project employs a Convolutional Neural Network (CNN) built with PyTorch to classify images of fruits and vegetables. Users upload an image, and the model identifies the corresponding category</p>
+    <main>
+        <section id="my-work" class="projects-section">
+            <div class="container">
+                <h2>My Projects</h2>
+                <p class="section-subtitle">Here's a selection of projects I've poured my efforts into.</p>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="weather_viz.png" alt="Weather Data Visualization Project" class="project-image">
+                        </div>
+                        <div class="project-card-content">
+                            <a href="https://github.com/Llwnr/WeatherDataVisualization" target="_blank"><h3>Weather Data Visualization</h3></a>
+                            <p>Visualizing meteorological data using GFS, GDAL, GeoServer, and PostGIS for processing and display.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Llwnr/WeatherDataVisualization" target="_blank" class="project-icon-link" aria-label="Weather Data Visualization GitHub">
+                                    <img src="github-mark.svg" alt="GitHub Icon">
+                                </a>
+                                <!-- <a href="#" target="_blank" class="project-live-link">View Demo (if available)</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="pewpew.png" alt="Pewpew Game Screenshot" class="project-image">
+                        </div>
+                        <div class="project-card-content">
+                            <a href="https://llwnr.itch.io/pewpew" target="_blank"><h3>Pewpew</h3></a>
+                            <p>An action roguelike game inspired by X Invader, with 8+ enemy types, a final boss, and 20+ upgrades. Developed solo in Unity/C#.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Llwnr/WelpHereWeGoOnceAgain.git" target="_blank" class="project-icon-link" aria-label="Pewpew GitHub">
+                                    <img src="github-mark.svg" alt="GitHub Icon">
+                                </a>
+                                <a href="https://llwnr.itch.io/pewpew" target="_blank" class="project-live-link">Play on Itch.io</a>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="project-icons">
-                    <a href="https://www.kaggle.com/code/lunarnight/fruits-vegetable-classification?scriptVersionId=209725381">
-                        <img src="189_Kaggle_logo_logos-512.webp" alt="Kaggle Icon" style="width: 32px;">
-                    </a>
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="fruitvegwallpaper.png" alt="Fruit & Veg Recognition App" class="project-image">
+                        </div>
+                        <div class="project-card-content">
+                            <a href="https://fruitvegrecognition-llwnr.streamlit.app/" target="_blank"><h3>Fruit & Veg Recognition</h3></a>
+                            <p>A PyTorch-based CNN model to classify fruit and vegetable images. Deployed with Streamlit for interactive use.</p>
+                            <div class="project-links">
+                                <a href="https://www.kaggle.com/code/lunarnight/fruits-vegetable-classification?scriptVersionId=209725381" target="_blank" class="project-icon-link" aria-label="Fruit & Veg Recognition Kaggle">
+                                    <img src="189_Kaggle_logo_logos-512.webp" alt="Kaggle Icon">
+                                </a>
+                                <a href="https://fruitvegrecognition-llwnr.streamlit.app/" target="_blank" class="project-live-link">Try Live App</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="job.png" alt="Job Email Generator App" class="project-image">
+                        </div>
+                        <div class="project-card-content">
+                             <a href="https://jobemailgen.streamlit.app/" target="_blank"><h3>Job Email Generation</h3></a>
+                            <p>Automates crafting application emails from job posting URLs, streamlining the job application process. Built with Streamlit.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Llwnr/JobEmailGen.git" target="_blank" class="project-icon-link" aria-label="Job Email Generation GitHub">
+                                    <img src="github-mark.svg" alt="GitHub Icon">
+                                </a>
+                                <a href="https://jobemailgen.streamlit.app/" target="_blank" class="project-live-link">Try Live App</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="project-card">
-                <a href="https://jobemailgen.streamlit.app/" target="_blank"><img src="job.png" alt="Job Mail Generator"></a>
-                <a href="https://jobemailgen.streamlit.app/" target="_blank"><h3>Job Email Generation</h3></a>
-                <p>This project automates the generation of application emails linked directly to job postings. Users provide a job posting URL, and the system creates a tailored application email, streamlining the job application process.</p>
-                <div class="project-icons">
-                    <a href="https://github.com/Llwnr/JobEmailGen.git"><img src="github-mark.svg" alt="Github Icon"></a>
-                </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="currentYear"></span> Asesh Maharjan. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Llwnr" target="_blank">GitHub</a>
+                <a href="mailto:aseshwork2002@gmail.com">E-mail: aseshwork2002@gmail.com</a>
             </div>
         </div>
-    </section>
-    <div class="footer">
-        <a href="https://github.com/Llwnr">Github</a><br/><br/>
-        E-mail: aseshwork2002@gmail.com
-    </div>
+    </footer>
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
